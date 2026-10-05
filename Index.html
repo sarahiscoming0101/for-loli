@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loli 💖</title>
+    <!-- استيراد خط ديجيتال ومبكسل كيوت -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffd6e0; /* خلفية بيبي بينك ناعمة */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* تصميم نافذة الكمبيوتر الكلاسيكية الكيوت كما في الصورة */
+        .window {
+            width: 480px;
+            height: 480px;
+            background: #f4f4f4;
+            border: 3px solid #ff8fab;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(255, 107, 157, 0.3), 
+                        inset 0 0 0 2px #fff;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 10;
+            animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* شريط العنوان العلوي للنافذة */
+        .window-header {
+            background: linear-gradient(90deg, #ffb3c6, #ff8fab);
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            border-bottom: 2px solid #ff6b9d;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .window-title {
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+        }
+
+        /* أزرار النافذة (تصغير، تكبير، إغلاق) */
+        .window-buttons {
+            display: flex;
+            gap: 5px;
+        }
+
+        .win-btn {
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border: 1px solid #c9184a;
+            border-radius: 3px;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #c9184a;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .win-btn.close {
+            background: #ff4d6d;
+            color: #fff;
+        }
+
+        /* محتوى النافذة الداخلي */
+        .window-body {
+            flex: 1;
+            background: #fff0f3;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* شبكة القلوب المبكسلة التي تشكل قلب كبير */
+        .pixel-heart-grid {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            grid-template-rows: repeat(15, 1fr);
+            opacity: 0.85;
+            animation: pulseHeart 2s ease-in-out infinite alternate;
+        }
+
+        .p-heart {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff4d6d;
+            user-select: none;
+            transition: transform 0.3s;
+        }
+
+        /* النص في المنتصف */
+        .content-box {
+            position: relative;
+            z-index: 5;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px 20px;
+            border-radius: 20px;
+            border: 2px dashed #ff8fab;
+            box-shadow: 0 5px 15px rgba(255, 107, 157, 0.15);
+            max-width: 340px;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', monospace;
+            color: #c9184a;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .name-tag {
+            color: #7b2cbf;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1rem;
+            background: #e0aaff;
+            padding: 8px 12px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 5px;
+            border: 2px solid #5a189a;
+        }
+
+        /* تأثيرات الحركة */
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes pulseHeart {
+            0% { transform: scale(0.95); }
+            100% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="window">
+        <!-- شريط العنوان للنافذة -->
+        <div class="window-header">
+            <div class="window-title">
+                <span>♡</span> Loli_Message.exe
+            </div>
+            <div class="window-buttons">
+                <div class="win-btn">🗕</div>
+                <div class="win-btn">🗖</div>
+                <div class="win-btn close">✕</div>
+            </div>
+        </div>
+
+        <!-- محتوى النافذة -->
+        <div class="window-body">
+            
+            <!-- قلوب مبكسلة مرصوصة لتشكل قلب كبير في الخلفية -->
+            <div class="pixel-heart-grid">
+                <!-- الصف 1 -->
+                <div class="p-heart" style="grid-column: 4; grid-row: 2;">💗</div>
+                <div class="p-heart" style="grid-column: 5; grid-row: 2;">💖</div>
+                <div class="p-heart" style="grid-column: 6; grid-row: 2;">💓</div>
+                <div class="p-heart" style="grid-column: 10; grid-row: 2;">💗</div>
+                <div class="p-heart" style="grid-column: 11; grid-row: 2;">💖</div>
+                <div class="p-heart" style="grid-column: 12; grid-row: 2;">💓</div>
+                
+                <!-- الصف 2 -->
+                <div class="p-heart" style="grid-column: 3; grid-row: 3;">💖</div>
+                <div class="p-heart" style="grid-column: 4; grid-row: 3;">💗</div>
+                <div class="p-heart" style="grid-column: 5; grid-row: 3;">💖</div>
+                <div class="p-heart" style="grid-column: 6; grid-row: 3;">💓</div>
+                <div class="p-heart" style="grid-column: 7; grid-row: 3;">💗</div>
+                <div class="p-heart" style="grid-column: 9; grid-row: 3;">💖</div>
+                <div class="p-heart" style="grid-column: 10; grid-row: 3;">💗</div>
+                <div class="p-heart" style="grid-column: 11; grid-row: 3;">💖</div>
+                <div class="p-heart" style="grid-column: 12; grid-row: 3;">💓</div>
+                <div class="p-heart" style="grid-column: 13; grid-row: 3;">💗</div>
+
+                <!-- الصف 3 إلى 7 (جسم القلب الكبير) -->
+                <div class="p-heart" style="grid-column: 2; grid-row: 4;">💓</div>
+                <div class="p-heart" style="grid-column: 3; grid-row: 4;">💖</div>
+                <div class="p-heart" style="grid-column: 4; grid-row: 4;">💗</div>
+                <div class="p-heart" style="grid-column: 5; grid-row: 4;">💖</div>
+                <div class="p-heart" style="grid-column: 6; grid-row: 4;">💓</div>
+                <div class="p-heart" style="grid-column: 7; grid-row: 4;">💗</div>
+                <div class="p-heart" style="grid-column: 8; grid-row: 4;">💖</div>
+                <div class="p-heart" style="grid-column: 9; grid-row: 4;">💓</div>
+                <div class="p-heart" style="grid-column: 10; grid-row: 4;">💗</div>
+                <div class="p-heart" style="grid-column: 11; grid-row: 4;">💖</div>
+                <div class="p-heart" style="grid-column: 12; grid-row: 4;">💓</div>
+                <div class="p-heart" style="grid-column: 13; grid-row: 4;">💗</div>
+                <div class="p-heart" style="grid-column: 14; grid-row: 4;">💖</div>
+
+                <div class="p-heart" style="grid-column: 2; grid-row: 5;">💗</div>
+                <div class="p-heart" style="grid-column: 3; grid-row: 5;">💓</div>
+                <div class="p-heart" style="grid-column: 4; grid-row: 5;">💖</div>
+                <div class="p-heart" style="grid-column: 5; grid-row: 5;">💗</div>
+                <div class="p-heart" style="grid-column: 6; grid-row: 5;">💖</div>
+                <div class="p-heart" style="grid-column: 7; grid-row: 5;">💓</div>
+                <div class="p-heart" style="grid-column: 8; grid-row: 5;">💗</div>
+                <div class="p-heart" style="grid-column: 9; grid-row: 5;">💖</div>
+                <div class="p-heart" style="grid-column: 10; grid-row: 5;">💓</div>
+                <div class="p-heart" style="grid-column: 11; grid-row: 5;">💗</div>
+                <div class="p-heart" style="grid-column: 12; grid-row: 5;">💖</div>
+                <div class="p-heart" style="grid-column: 13; grid-row: 5;">💓</div>
+                <div class="p-heart" style="grid-column: 14; grid-row: 5;">💗</div>
+
+                <div class="p-heart" style="grid-column: 3; grid-row: 6;">💖</div>
+                <div class="p-heart" style="grid-column: 4; grid-row: 6;">💗</div>
+                <div class="p-heart" style="grid-column: 5; grid-row: 6;">💓</div>
+                <div class="p-heart" style="grid-column: 6; grid-row: 6;">💖</div>
+                <div class="p-heart" style="grid-column: 7; grid-row: 6;">💗</div>
+                <div class="p-heart" style="grid-column: 8; grid-row: 6;">💓</div>
+                <div class="p-heart" style="grid-column: 9; grid-row: 6;">💖</div>
+                <div class="p-heart" style="grid-column: 10; grid-row: 6;">💗</div>
+                <div class="p-heart" style="grid-column: 11; grid-row: 6;">💓</div>
+                <div class="p-heart" style="grid-column: 12; grid-row: 6;">💖</div>
+                <div class="p-heart" style="grid-column: 13; grid-row: 6;">💗</div>
+
+                <div class="p-heart" style="grid-column: 4; grid-row: 7;">💓</div>
+                <div class="p-heart" style="grid-column: 5; grid-row: 7;">💖</div>
+                <div class="p-heart" style="grid-column: 6; grid-row: 7;">💗</div>
+                <div class="p-heart" style="grid-column: 7; grid-row: 7;">💓</div>
+                <div class="p-heart" style="grid-column: 8; grid-row: 7;">💖</div>
+                <div class="p-heart" style="grid-column: 9; grid-row: 7;">💗</div>
+                <div class="p-heart" style="grid-column: 10; grid-row: 7;">💓</div>
+                <div class="p-heart" style="grid-column: 11; grid-row: 7;">💖</div>
+                <div class="p-heart" style="grid-column: 12; grid-row: 7;">💗</div>
+
+                <div class="p-heart" style="grid-column: 5; grid-row: 8;">💖</div>
+                <div class="p-heart" style="grid-column: 6; grid-row: 8;">💗</div>
+                <div class="p-heart" style="grid-column: 7; grid-row: 8;">💓</div>
+                <div class="p-heart" style="grid-column: 8; grid-row: 8;">💖</div>
+                <div class="p-heart" style="grid-column: 9; grid-row: 8;">💗</div>
+                <div class="p-heart" style="grid-column: 10; grid-row: 8;">💓</div>
+                <div class="p-heart" style="grid-column: 11; grid-row: 8;">💖</div>
+
+                <div class="p-heart" style="grid-column: 6; grid-row: 9;">💗</div>
+                <div class="p-heart" style="grid-column: 7; grid-row: 9;">💖</div>
+                <div class="p-heart" style="grid-column: 8; grid-row: 9;">💓</div>
+                <div class="p-heart" style="grid-column: 9; grid-row: 9;">💗</div>
+                <div class="p-heart" style="grid-column: 10; grid-row: 9;">💖</div>
+
+                <div class="p-heart" style="grid-column: 7; grid-row: 10;">💓</div>
+                <div class="p-heart" style="grid-column: 8; grid-row: 10;">💗</div>
+                <div class="p-heart" style="grid-column: 9; grid-row: 10;">💖</div>
+
+                <div class="p-heart" style="grid-column: 8; grid-row: 11;">💓</div>
+            </div>
+
+            <!-- الرسالة في المنتصف -->
+            <div class="content-box">
+                <h1>I am proud of you</h1>
+                <span class="name-tag">Loli</span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
